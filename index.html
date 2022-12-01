@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <title>Document</title>
+  </head>
+
+  <style>
+    *, *:after, *::before {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 18px 0;
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background-color: #eee;
+    }
+
+    .form {
+      padding: 20px 30px;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    .form__title {}
+
+    .form__input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 4px;
+      font-family: inherit;
+    }
+
+    .form__btn {
+      display: block;
+      width: 100%;
+      margin-bottom: 25px;
+      padding: 12px 20px;
+      background-color: rgba(33,33,33, .75);
+      color: #fff;
+      font-family: inherit;
+      cursor: pointer;
+      transition: .2s;
+      border: 0;
+    }
+
+    .form__btn:hover {
+      background-color: rgba(33,33,33, .85);
+    }
+
+    .form__btn:active {
+      background-color: rgba(33,33,33, 1);
+    }
+
+    .form__result {
+      padding: 4px;
+    }
+
+  </style>
+
+  <body>
+
+    <main class="main">
+      <div class="form">
+        <h2 class="form__title">Форма поиска пользователей</h2>
+
+        <input type="text" class="form__input" name="search" id="">
+
+        <button type="submit" class="form__btn">Найти пользователя</button>
+
+        <div class="form__result"></div>
+      </div>
+    </main>
+
+
+    <script src="/index.js"></script>
+  </body>
+
+</html>
