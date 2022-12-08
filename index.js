@@ -7,6 +7,10 @@ let users = [
     name: 'Andy',
     age: 25,
   },
+  {
+    name: 'Andy',
+    age: 25,
+  },
 ]
 
 function getRandomArbitrary(min, max) {
